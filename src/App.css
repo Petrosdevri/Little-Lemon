@@ -8,6 +8,10 @@
   src: url('./fonts/markazi-text.regular.ttf');
 }
 
+* {
+  color: #000000;
+}
+
 header, nav > ul {
   display: flex;
   flex-direction: row;
@@ -30,7 +34,6 @@ li {
 }
 
 a {
-  color: #000000;
   text-decoration: none;
 }
 
@@ -59,7 +62,14 @@ h4 {
 h5 {
   font-family: 'Karla';
   font-size: 16px;
-  font-weight: 800;
+  font-weight: 700;
+}
+
+h6 {
+  color: #EE9972;
+  font-family: 'Karla';
+  font-size: 14px;
+  font-weight: 700;
 }
 
 p {
@@ -72,6 +82,66 @@ span {
   font-family: 'Karla';
   font-size: 16px;
   font-weight: 500;
+}
+
+.hero {
+  background-color: #495E57;
+  display: flex;
+  justify-content: space-around;
+}
+
+.starter-info {
+  margin: 20px;
+}
+
+.hero > .starter-info > h1 {
+  color: #F4CE14;
+}
+
+.hero > .starter-info > h2 {
+  color: #FFFFFF;
+}
+
+.starter-info, aside {
+  margin-left: 20%;
+}
+
+#restaurant-food {
+  width: 375px;
+  height: 425px;
+}
+
+#reserve-btn, #online-menu {
+  width: 200px;
+  height: 60px;
+  background-color: #F4CE14;
+  border: none;
+  border-radius: 16px;
+}
+
+#reserve-btn:hover, #online-menu:hover, #reserve-btn:active, #online-menu:active {
+  background-color: #495E57;
+  color: #FFFFFF;
+  box-shadow: 2px 4px 10px #000000;
+}
+
+.warning, .specials-menu {
+  display: flex;
+  justify-content: space-around;
+}
+
+#greek-salad, #bruschetta, #lemon-dessert {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: space-evenly;
+  margin: 30px;
+}
+
+.title-and-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: space-evenly;
 }
 
 footer {
