@@ -1,3 +1,5 @@
+import RestaurantFood from '../images/restaurant-food.jpg';
+
 export default function Hero() {
     return (
         <div className="hero">
@@ -10,13 +12,12 @@ export default function Hero() {
                     recipes served with a modern<br />
                     twist.
                 </h4>
-                <br />
                 <button id="reserve-btn">
                     <h3>Reserve a Table</h3>
                 </button>
             </div>
             <aside>
-                <img src='./images/restaurantfood.jpg' id="restaurantt-food" alt="restaurant-food" />
+                <img src={RestaurantFood} id="restaurant-food" alt="restaurant-food" />
             </aside>
         </div>
     );

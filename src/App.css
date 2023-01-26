@@ -1,3 +1,4 @@
+/* Font Imports */
 @font-face {
   font-family: 'Markazi Text Medium';
   src: url('./fonts/markazi-text.medium.ttf');
@@ -8,29 +9,9 @@
   src: url('./fonts/markazi-text.regular.ttf');
 }
 
+/* General Decorations */
 * {
   color: #000000;
-}
-
-header, nav > ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-}
-
-nav > ul > li {
-  margin: 10px;
-}
-
-ul {
-  list-style-type: none;
-}
-
-li {
-  font-family: 'Karla';
-  font-size: 20px;
-  font-weight: 500;
-  text-decoration: none;
 }
 
 a {
@@ -89,15 +70,38 @@ span {
   font-weight: 500;
 }
 
-.hero {
-  background-color: #495E57;
+/* Header-Navbar */
+header, nav > ul {
   display: flex;
-  justify-content: space-around;
-  padding: 40px;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 
-.starter-info {
-  margin: 20px;
+nav > ul > li {
+  margin: 10px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  font-family: 'Karla';
+  font-size: 20px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+/* Hero */
+.hero {
+  background-color: #495E57;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .hero > .starter-info > h1 {
@@ -108,15 +112,12 @@ span {
   color: #FFFFFF;
 }
 
-.starter-info, aside {
-  margin-left: 20%;
-}
-
 #restaurant-food {
   width: 375px;
   height: 425px;
 }
 
+/* Buttons */
 #reserve-btn, #online-menu {
   width: 200px;
   height: 60px;
@@ -128,19 +129,19 @@ span {
 #reserve-btn:hover, #online-menu:hover, #reserve-btn:active, #online-menu:active {
   background-color: #495E57;
   box-shadow: 2px 4px 10px #000000;
+  cursor: pointer;
 }
 
 #reserve-btn:hover > h3, #online-menu:hover > h5 {
   color: #FFFFFF;
 }
 
-.specials {
-  margin-top: 30px;
-}
-
+/* Specials */
 .warning, .specials-menu {
   display: flex;
-  justify-content: space-around;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 #greek-salad, #bruschetta, #lemon-dessert {
@@ -156,15 +157,20 @@ span {
 }
 
 #greek-salad > img, #bruschetta > img, #lemon-dessert > img {
-  border-radius: 16px;
+  width: 264px;
+  height: 185px;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
 }
 
 .title-and-price {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: space-evenly;
 }
 
+/* Testimonials */
 .testimonials {
   background: #495E57;
   padding: 40px;
@@ -185,6 +191,10 @@ span {
   background: #FFFFFF;
   width: 200px;
   height: 175px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: left;
 }
 
 .rating-data {
@@ -194,20 +204,52 @@ span {
   align-items: space-evenly;
 }
 
-.chicago {
+.rating-data > img {
+  width: 45px;
+  height: 45px;
+}
+
+/* About */
+.about {
+  height: 550px;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   padding: 40px;
 }
 
 .title-and-subtitle2 {
+  margin: 0;
+  padding: 0;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: flex-start;
+  align-items: left;
 }
 
+.restaurant-images {
+  position: relative;
+}
+
+.restaurant-images > img {
+  width: 275px;
+  height: 340px;
+}
+
+#restaurant-img {
+  position: absolute;
+  z-index: 2;
+  left: 8px;
+  top: 2px;
+}
+
+#chefs {
+  position: absolute;
+  right: 8px;
+  bottom: 2px;
+}
+
+/* Footer */
 footer {
   display: flex;
   flex-direction: row;
