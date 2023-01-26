@@ -1,7 +1,9 @@
+import Logo from "../images/Logo.svg";
+
 export default function Footer() {
     return (
         <footer>
-            <img src="images/Logo.svg" alt="logo"/>
+            <img src={Logo} alt="logo"/>
             <ul>
                 <li><a href="#">Doormat</a></li>
                 <li><a href="#">Navigation</a></li>
