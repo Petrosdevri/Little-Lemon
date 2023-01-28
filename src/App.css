@@ -177,6 +177,7 @@ li {
 }
 
 .testimonials > h2 {
+  color: #FFFFFF;
   text-align: center;
 }
 
@@ -209,13 +210,16 @@ li {
   height: 45px;
 }
 
+.testimonial > blockquote {
+  font-weight: 300;
+}
+
 /* About */
 .about {
   height: 550px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
-  padding: 40px;
 }
 
 .title-and-subtitle2 {
@@ -229,24 +233,23 @@ li {
 
 .restaurant-images {
   position: relative;
+  margin: 40px;
 }
 
 .restaurant-images > img {
-  width: 275px;
-  height: 340px;
+  width: 220px;
+  height: 300px;
 }
 
 #restaurant-img {
   position: absolute;
   z-index: 2;
   left: 8px;
-  top: 2px;
 }
 
 #chefs {
   position: absolute;
   right: 8px;
-  bottom: 2px;
 }
 
 /* Footer */
@@ -254,7 +257,7 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  margin: 10px;
+  margin-top: 30px;
 }
 
 @media screen and (max-width: 768px) {
