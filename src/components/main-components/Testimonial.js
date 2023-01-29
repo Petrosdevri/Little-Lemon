@@ -8,7 +8,7 @@ export default function Testimonial() {
                 <img src={Person1} alt="rating-img"/>
                 <h6>Name</h6>
             </div>
-            <p>Review text</p>
+            <blockquote><em>Review text</em></blockquote>
         </div>
     )
 }
