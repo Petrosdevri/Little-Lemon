@@ -6,12 +6,12 @@ export default function Hero() {
             <div class="starter-info">
                 <h1>Little Lemon</h1>
                 <h2>Chicago</h2>
-                <h4>We are a family owned<br /> 
+                <h5>We are a family owned<br /> 
                     Mediterranean restaurant,<br /> 
                     focused on traditional<br />
                     recipes served with a modern<br />
                     twist.
-                </h4>
+                </h5>
                 <button id="reserve-btn">
                     <h3>Reserve a Table</h3>
                 </button>

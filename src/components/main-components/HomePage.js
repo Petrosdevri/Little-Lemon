@@ -1,7 +1,15 @@
+import Hero from './Hero';
+import Specials from './Specials';
+import Testimonials from './Testimonials';
+import About from './About';
+
 export default function HomePage() {
     return (
-        <div>
-            <h1>Home Page</h1>
-        </div>
+        <main>
+            <Hero />
+            <Specials />
+            <Testimonials />
+            <About />
+        </main>
     );
 }
