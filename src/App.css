@@ -14,7 +14,7 @@
   color: #000000;
 }
 
-a, Link:link {
+a, Link {
   text-decoration: none;
 }
 
@@ -242,23 +242,24 @@ li {
 
 .restaurant-images {
   position: relative;
-  margin: 40px;
 }
 
 .restaurant-images > img {
   width: 220px;
   height: 300px;
+  margin-bottom: 40px;
 }
 
 #restaurant-img {
-  position: absolute;
-  z-index: 2;
-  left: 8px;
+  position: relative;
+  right: 5px;
 }
 
 #chefs {
-  position: absolute;
-  right: 8px;
+  position: relative;
+  z-index: 2;
+  right: 2rem;
+  bottom: 2rem;
 }
 
 /* Footer */
@@ -291,12 +292,11 @@ footer {
 .about-page > .restaurant-imgs > img {
   width: 220px;
   height: 300px;
+  margin-bottom: 40px;
 }
 
 .restaurant-imgs > #restaurant-img {
-  position: absolute;
-  left: 52rem;
-  bottom: 2rem;
+  position: relative;
 }
 
 .restaurant-imgs > #chefs {
