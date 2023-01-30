@@ -1,15 +1,20 @@
-import Hero from './main-components/Hero';
-import Specials from './main-components/Specials';
-import Testimonials from './main-components/Testimonials';
-import About from './main-components/About';
+import HomePage from "./main-components/HomePage";
+import About from "./nav-pages/About";
+import Menu from "./nav-pages/Menu";
+import Reservations from "./nav-pages/Reservations";
+import Order from "./nav-pages/booking-page/Order";
+import Login from "./nav-pages/Login";
+import { Routes, Route } from "react-router-dom";
 
 export default function Main() {
     return (
-        <main>
-            <Hero />
-            <Specials />
-            <Testimonials />
-            <About />
-        </main>
+        <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/menu" element={<Menu />} />
+            <Route path="/reservations" element={<Reservations />} />
+            <Route path="/order-online" element={<Order />} />
+            <Route path="/login" element={<Login />} />
+        </Routes>
     );
 }
