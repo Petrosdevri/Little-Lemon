@@ -14,7 +14,13 @@
   color: #000000;
 }
 
-a, Link {
+a:link {
+  color: #000000;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #EE9972;
   text-decoration: none;
 }
 
@@ -45,12 +51,6 @@ h5 {
   font-weight: 700;
 }
 
-h5 {
-  font-family: 'Karla';
-  font-size: 16px;
-  font-weight: 700;
-}
-
 h5:hover {
   color: #EE9972;
   cursor: pointer;
@@ -63,6 +63,18 @@ h6 {
 }
 
 p {
+  font-family: 'Karla';
+  font-size: 16px;
+  font-weight: 400;
+}
+
+label {
+  font-family: 'Karla';
+  font-size: 16px;
+  font-weight: 700;
+}
+
+input {
   font-family: 'Karla';
   font-size: 16px;
   font-weight: 400;
@@ -270,6 +282,23 @@ footer {
   margin-top: 30px;
 }
 
+footer > ul > li {
+  margin: 5px;
+}
+
+li > a {
+  color: #000000;
+}
+
+li > a:hover {
+  color: #F4CE14;
+}
+
+li > img {
+  width: 30px;
+  height: 30px;
+}
+
 /* About Page */
 .about-page {
   background: #F4CE14;
@@ -317,6 +346,73 @@ footer {
 
 .menu > h1, .menu > .specials-menu {
   margin-top: 20px;
+}
+
+/* Reservations Page */
+.booking-form {
+  background: url('https://b.zmtcdn.com/web_assets/81f3ff974d82520780078ba1cfbd453a1583259680.png');
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.reservations-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+input, select {
+  background: #CFCFCF;
+  border: none;
+  border-radius: 10px;
+}
+
+#submit-form-btn {
+  background: #F4CE14;
+  border: none;
+  border-radius: 8px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+#submit-form-btn:hover {
+  box-shadow: 2px 2px 4px #000000;
+}
+
+/* Order Online Page */
+.order-online {
+  background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url('https://b.zmtcdn.com/web_assets/81f3ff974d82520780078ba1cfbd453a1583259680.png');
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.order-info {
+  margin: 40px;
+}
+
+.order-info > h1, .order-info > p {
+  color: #FFFFFF;
+  text-align: center;
+}
+
+#order-btn {
+  background: #F4CE14;
+  border: none;
+  border-radius: 8px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+#order-btn:hover, #order-btn > Link:hover {
+  background: #495E57;
+  color: #FFFFFF;
 }
 
 @media screen and (max-width: 768px) {

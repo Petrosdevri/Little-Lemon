@@ -1,35 +1,36 @@
 import { Link } from "react-router-dom";
-
-/*<ul>
-                <li></li>
-                <li><a href="/about">About</a></li>
-                <li><a href="/menu">Menu</a></li>
-                <li><a href="/reservations">Reservations</a></li>
-                <li><a href="/order-online">Order Online</a></li>
-                <li><a href="/login">Login</a></li>
-            </ul> */
+import { useState } from "react";
 
 export default function Nav() {
+    function useHover(styleOnHover, styleOnNotHover) {
+        const [style, setStyle] = useState(styleOnNotHover);
+        const onMouseEnter = () => setStyle(styleOnHover)
+        const onMouseLeave = () => setStyle(styleOnNotHover)
+        return {style, onMouseEnter, onMouseLeave}
+    }
+
+    const hover2 = useHover({ color: '#EE9972'}, { color: '#000000' });
+
     return (
         <nav>
             <ul>
                 <li>
-                    <Link to="/">Home</Link>
+                    <Link to="/" {...hover2}>Home</Link>
                 </li>
                 <li>
-                    <Link to="/about">About</Link>
+                    <Link to="/about" {...hover2}>About</Link>
                 </li>
                 <li>
-                    <Link to="/menu">Menu</Link>
+                    <Link to="/menu" {...hover2}>Menu</Link>
                 </li>
                 <li>
-                    <Link to="/reservations">Reservations</Link>
+                    <Link to="/reservations" {...hover2}>Reservations</Link>
                 </li>
                 <li>
-                    <Link to="/order-online">Order Online</Link>
+                    <Link to="/order-online" {...hover2}>Order Online</Link>
                 </li>
                 <li>
-                    <Link to="/login">Login</Link>
+                    <Link to="/login" {...hover2}>Login</Link>
                 </li>
             </ul>
         </nav>
