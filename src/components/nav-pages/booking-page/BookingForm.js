@@ -18,12 +18,12 @@ export default function BookingForm(props) {
     }
 
     return (
-        <div class="booking-form">
-            <div class="booking-form-img">
+        <div className="booking-form">
+            <div className="booking-form-img">
                 <h1>Make a reservation</h1>
                 <p>Fill out the form below to make a reservation.</p>
             </div>
-            <form class="reservations-form">
+            <form className="reservations-form">
                 <label htmlFor="res-date">Choose date</label>
                 <input type="date" id="res-date" value={date} onChange={handleDateChange} required/>
                 <label htmlFor="res-time">Choose time</label>

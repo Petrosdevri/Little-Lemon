@@ -2,7 +2,7 @@ import HomePage from "./main-components/HomePage";
 import About from "./nav-pages/About";
 import Menu from "./nav-pages/Menu";
 import Reservations from "./nav-pages/booking-page/Reservations";
-import Order from "./nav-pages/booking-page/Order";
+import Order from "./nav-pages/Order";
 import Login from "./nav-pages/Login";
 import { Routes, Route } from "react-router-dom";
 

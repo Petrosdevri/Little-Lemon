@@ -1,13 +1,12 @@
-import Logo from "./images/Logo.svg";
-import Hamburger from "./images/icon _hamburger menu.svg";
-import Nav from './Nav';
+// import Logo from "./images/Logo.svg";
+import Navigation from './Nav';
 
 export default function Header() {
     return (
         <header>
-            <img src={Logo} alt="logo" />
-            <Nav />
-            <img src={Hamburger} alt="hamburger menu" />
+            <Navigation />
         </header>
     );
 }
+
+// <img src={Logo} alt="logo" id="logo"/>

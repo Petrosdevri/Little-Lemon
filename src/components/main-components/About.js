@@ -1,11 +1,11 @@
-import Restaurant from '../images/restaurant.jpg';
-import Chefs from '../images/Mario and Adrian A.jpg';
+import RestaurantInterior from '../images/restaurant-interior.png';
+import RestaurantDishes from '../images/restaurant-dishes.png';
 
 export default function About() {
     return (
         <div className="about">
             <article className="restaurant-info">
-                <div class="title-and-subtitle2">
+                <div className="title-and-subtitle2">
                     <h1 style={{ color: 'black' }}>Little Lemon</h1>
                     <h2 style={{ color: 'black' }}>Chicago</h2>
                 </div>
@@ -21,8 +21,8 @@ export default function About() {
                 </h4>
             </article>
             <article className="restaurant-images">
-                <img src={Restaurant} id="restaurant-img" alt="restaurant-img"/>
-                <img src={Chefs} id="chefs" alt="chefs"/>
+                <img src={RestaurantDishes} id="restaurant-dishes" alt="restaurant-dishes"/>
+                <img src={RestaurantInterior} id="restaurant-interior" alt="restaurant-interior"/>
             </article>
         </div>
     )

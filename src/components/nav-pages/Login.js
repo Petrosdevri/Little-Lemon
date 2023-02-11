@@ -1,9 +1,8 @@
 export default function Login() {
     return (
-        <header className="reserve-table">
-            <div className="reserve-header-text">
-                <h1>Login</h1>
-            </div>
-        </header>
+        <div className="login">
+            <h1>Login</h1>
+            <p>This page is under construction.</p>
+        </div>
     );
 }
