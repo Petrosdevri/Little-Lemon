@@ -1,8 +1,10 @@
+import { Stack } from "react-bootstrap";
+
 export default function Login() {
     return (
-        <div className="login">
+        <Stack className="login">
             <h1>Login</h1>
             <p>This page is under construction.</p>
-        </div>
+        </Stack>
     );
 }

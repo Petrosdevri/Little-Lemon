@@ -14,7 +14,7 @@ export default function Footer() {
                 <li><a href="/order">Order Online</a></li>
                 <li><a href="/login" >Login</a></li>
             </ul>
-            <div className="contact-line">
+            <div className="contact-line" direcion="horizontal">
                 <ul>
                     <li>Contact</li>
                     <br></br>
