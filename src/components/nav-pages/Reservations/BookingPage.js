@@ -1,6 +1,6 @@
 import { useReducer } from "react";
 import BookingForm from './BookingForm';
-import fetchAPI from "../../API";
+import { fetchAPI } from "../../API";
 
 export default function BookingPage() {
     /* let availableTimes = ["12:00 PM", "12:30 PM", "1:00 PM", "1:30 PM", "2:00 PM",
@@ -11,7 +11,7 @@ export default function BookingPage() {
         const data = await fetchAPI(date);
         dispatch([...data]);
     };
-    const initializeTimes = () => fetchAPI(new Date());
+    // const initializeTimes = () => fetchAPI(new Date());
     const [availableTimes, dispatch] = useReducer(updateTimes, []);
 
     return (
